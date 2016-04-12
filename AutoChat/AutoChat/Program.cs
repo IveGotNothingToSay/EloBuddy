@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using EloBuddy;
 using EloBuddy.SDK;
@@ -106,17 +106,17 @@ namespace AutoChat
         {
             Congrats = new List<string>
             {
-                "gj", "gj", "gj", "gj", "good job", "wp", "nice", "goodjob", "gjwp", "nice one", "sweet", "awesome"
+                "boa!!!", "gj", "boaa", "gj", "k", "wp", "nice", "goodjob", "boa !", "krl", "aff", "gg"
             };
 
             Smileys = new List<string>
             {
-                "", "", "", "", "", ":)", ":P"
+                "", "", "", "", "=D", ":)", ":P"
             };
 
             Greetings = new List<string>
             {
-                "gl", "hf", "have fun guys", "gl hf", "glhf", "have fun all"
+                "gl", "blz?", "eae", "gl hf", "daeww", "oi"
             };
 
             SignOff = new List<string>
@@ -126,27 +126,27 @@ namespace AutoChat
 
             Apologize = new List<string>
             {
-                "damn", "sorry guys", "sorry", "woops", "soz", "my bad"
+                "aff", "lag", "net lixo", "a naoooo", "kkkkkkkkk", "mb"
             };
 
             Sympathy = new List<string>
             {
-                "bl", "bl", "tough luck", "bad luck", "bummer"
+                "eita", "q merda", "droga"
             };
 
             Clutch = new List<string>
             {
-                "hahaha", "NICE", "GJ", "WELL DONE", "HAHA", "epic", "REKT", "WOW", "GG"
+                "kkkkkkk", "boa", "gjj", "ta", "kk", "kkk", "lol", "kkkk", "ok"
             };
 
             Motivate = new List<string>
             {
-                "push towers", "towers" , "clear lanes", "push", "need objectives", "objectives" ,"lanes", "push", "drag?"
+                "bora acabar", "gogogo" , "preciso sair", "ganha logo", "faz o dragao", 
             };
 
             Honor = new List<string>
             {
-                "wp" ,"wp" , "wp sir", "damn wp", "wp mate", "wp dude", "wp man"
+                "wp" ,"boa" 
             };
         }
         #endregion
