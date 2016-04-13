@@ -245,7 +245,7 @@ namespace AutoChat
             {
                 if (GreetingMenu["sayGreetingAllChat"].Cast<CheckBox>().CurrentValue)
                 {
-                    Core.DelayAction(() => Chat.Say("/all " + generateGreeting()), (random.Next(minGreetingDelay, maxGreetingDelay)));
+                    Core.DelayAction(() => Chat.Say(generateGreeting()), (random.Next(minGreetingDelay, maxGreetingDelay)));
                 }
                 else
                 {
@@ -321,7 +321,7 @@ namespace AutoChat
             {
                 if (chance(10))
                 {
-                    Core.DelayAction(() => Chat.Say("/all " + generateHonor()), (random.Next(minDelay, maxDelay)));
+                    Core.DelayAction(() => Chat.Say(generateHonor()), (random.Next(minDelay, maxDelay)));
                 }
             }
         }
@@ -332,7 +332,7 @@ namespace AutoChat
             {
                 if (EndGameMenu["sayEndGameAllChat"].Cast<CheckBox>().CurrentValue)
                 {
-                    Core.DelayAction(() => Chat.Say("/all " + generateEnding()), (new Random(Environment.TickCount).Next(100, 1001)));
+                    Core.DelayAction(() => Chat.Say(generateEnding()), (new Random(Environment.TickCount).Next(100, 1001)));
                     return;
                 }
                 Core.DelayAction(() => Chat.Say(generateEnding()), (new Random(Environment.TickCount).Next(100, 1001)));
@@ -347,7 +347,7 @@ namespace AutoChat
             {
                 switch (champName)
                 {
-                    case "Alistar": return "ali";
+                    case "Alistar": return "alistar";
                     case "Blitzcrank": return "blitz";
                     case "Caitlyn": return "cait";
                     case "Cassiopeia": return "cass";
@@ -355,9 +355,9 @@ namespace AutoChat
                     case "Dr.Mundo": return "mundo";
                     case "Evelynn": return "eve";
                     case "Ezreal": return "ez";
-                    case "Fiddlesticks": return "fiddles";
+                    case "Fiddlesticks": return "fiddle";
                     case "Gangplank": return "gp";
-                    case "Hecarim": return "hec";
+                    case "Hecarim": return "heca";
                     case "Heimerdinger": return "heimer";
                     case "Jarvan IV": return "j4";
                     case "Katarina": return "kat";
@@ -367,21 +367,21 @@ namespace AutoChat
                     case "LeeSin": return "lee";
                     case "Lissandra": return "liss";
                     case "Malphite": return "malph";
-                    case "Malzahar": return "malz";
+                    case "Malzahar": return "malza";
                     case "MasterYi": return "yi";
                     case "MissFortune": return "mf";
-                    case "MonkeyKing": return "wk";
+                    case "MonkeyKing": return "wuk";
                     case "Mordekaiser": return "mord";
-                    case "Morgana": return "morg";
+                    case "Morgana": return "morgana";
                     case "Nautilus": return "naut";
-                    case "Nidalee": return "nid";
-                    case "Nocturne": return "noct";
+                    case "Nidalee": return "nida";
+                    case "Nocturne": return "noc";
                     case "Orianna": return "ori";
                     case "Rek'Sai": return "reksai";
-                    case "Sejuani": return "sej";
+                    case "Sejuani": return "seju";
                     case "TahmKench": return "tahm";
-                    case "Tristana": return "trist";
-                    case "Tryndamere": return "trynd";
+                    case "Tristana": return "tristana";
+                    case "Tryndamere": return "trynda";
                     case "TwistedFate": return "tf";
                     case "Vel'Koz": return "velkoz";
                     case "Vladimir": return "vlad";
@@ -407,17 +407,17 @@ namespace AutoChat
                 maxDelay = OptionsMenu["sayMessageDelayMax"].Cast<Slider>().CurrentValue * 1000;
 
                 // CHAMPION KILLS
-                if (args.EventId.ToString() == "OnChampionKill" || args.EventId.ToString() == "OnTurretKill")
-                {
-                    AIHeroClient _killer = ObjectManager.GetUnitByNetworkId<AIHeroClient>(args.NetworkId);
-                    if (_killer.IsAlly)
-                    {
-                        if (!_killer.IsMe)
-                        {
-                            sayCongratulations(_killer);
-                        }
-                    }
-                }
+               // if (args.EventId.ToString() == "OnChampionKill" || args.EventId.ToString() == "OnTurretKill")
+                //{
+                 //   AIHeroClient _killer = ObjectManager.GetUnitByNetworkId<AIHeroClient>(args.NetworkId);
+                  //  if (_killer.IsAlly)
+                //    {
+                 //       if (!_killer.IsMe)
+                  //      {
+                //            sayCongratulations(_killer);
+                 //       }
+                  //  }
+                //}
 
                 //TURRET KILLS
                 if (args.EventId.ToString() == "OnTurretKill")
@@ -454,7 +454,7 @@ namespace AutoChat
                         if (_dead.IsMe)
                         {
                             sayApology();
-                            sayHonor();
+                            //sayHonor();
                         }
                         else
                         {
