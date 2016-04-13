@@ -106,7 +106,7 @@ namespace AutoChat
         {
             Congrats = new List<string>
             {
-                "boa!!!", "gj", "boaa", "gj", "k", "wp", "nice", "goodjob", "boa !", "krl", "aff", "gg"
+                "boa!!!", "gj", "boaa", "gj", "k", "wp", "nice"
             };
 
             Smileys = new List<string>
@@ -126,7 +126,7 @@ namespace AutoChat
 
             Apologize = new List<string>
             {
-                "aff", "lag", "net lixo", "a naoooo", "kkkkkkkkk", "mb"
+                "aff", "lag", "net lixo", "a naoooo", "kkkkkkkkk", "mb", "porra", "qe merda"
             };
 
             Sympathy = new List<string>
