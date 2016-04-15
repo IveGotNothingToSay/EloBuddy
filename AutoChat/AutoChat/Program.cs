@@ -131,17 +131,17 @@ namespace AutoChat
 
             Sympathy = new List<string>
             {
-                "eita", "q merda", "droga"
+                "eita", "q merda", "droga", "vish"
             };
 
             Clutch = new List<string>
             {
-                "kkkkkkk", "boa", "gjj", "ta", "kk", "kkk", "lol", "kkkk", "ok"
+                "kkkkkkk", "boa", "gjj", "wtf", "kk", "kkk", "lol", "kkkk", "lo l"
             };
 
             Motivate = new List<string>
             {
-                "bora acabar", "gogogo" , "preciso sair", "ganha logo", "faz o dragao", 
+                "bora acabar", "gogogo" , "preciso sair", "ganha logo" 
             };
 
             Honor = new List<string>
